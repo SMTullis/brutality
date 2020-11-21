@@ -1,12 +1,14 @@
 *{
     font-size: 1em;
+    font-weight:normal;
     border: 0;
     margin: 0;
     outline: 0;
     padding: 0;
+    text-align:left;
 }
 
-*::after, *::before{
+*::after,*::before{
     content:"";
     display:inline;
 }
@@ -17,6 +19,28 @@ h3{font-size: 1.6em;}
 h4{font-size: 1.5em;}
 h5{font-size: 1.4em;}
 h6{font-size: 1.3em;}
+
+a,a:active,a:hover,a:visited,a:focus{
+    color:#000;
+    position:relative;
+    text-decoration:none;
+}
+
+a::after{
+    border-top:1px solid red;
+    width:100%;
+
+    bottom:0;
+    left:0;
+    position:absolute;
+}
+
+a:visited::after{border-color:purple;}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
 
 .clearfix::after{
     clear:both;
