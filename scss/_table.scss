@@ -1,0 +1,31 @@
+table{
+    border-collapse:collapse;
+    overflow-x:auto;
+    width:100%;
+    caption{
+        border-color:#000;
+        font-weight:bold;
+        padding:5px;
+    }
+    td,th{
+        border-color:#000;
+        padding:5px;
+    }
+    thead,tfoot{
+        th{
+            background:#EEE;
+            font-size:1.1rem;
+            font-weight:bold;
+        }
+    }
+    tbody{
+        td{
+            border-bottom-style:none;
+            border-top-style:none;
+        }
+        th{font-weight:bold;}
+        tr:nth-child(2n+0) td{
+            background:#EEE;
+        }
+    }
+}
